@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgFor, DatePipe, TitleCasePipe } from '@angular/common';
+import { DatePipe, TitleCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LucideAngularModule } from 'lucide-angular';
 import { DashboardService } from '../../../../core/services/dashboard';
@@ -7,7 +7,7 @@ import { Transaction } from '../../../../core/models/transaction.model';
 
 @Component({
   selector: 'app-transaction-list',
-  imports: [NgFor, DatePipe, TitleCasePipe, FormsModule, LucideAngularModule],
+  imports: [DatePipe, TitleCasePipe, FormsModule, LucideAngularModule],
   templateUrl: './transaction-list.html',
   styleUrl: './transaction-list.css',
 })
