@@ -1,0 +1,80 @@
+.activity-widget {
+  background: #22273B;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.month-select {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #8E92BC;
+  font-size: 13px;
+  padding: 6px 12px;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.activity-legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.dot.purple { background: #6C5DD3; }
+.dot.teal { background: #4ECDC4; }
+
+.label { color: #8E92BC; }
+.pct { color: #fff; font-weight: 600; }
+
+.view-all-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 13px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+  margin-top: auto;
+}
+
+.view-all-btn:hover { background: rgba(255,255,255,0.04); }

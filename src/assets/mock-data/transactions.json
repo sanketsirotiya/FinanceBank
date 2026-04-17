@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "companyName": "Adobe After Effect",
+    "companyLogo": "assets/logos/adobe.png",
+    "date": "2020-04-20T12:00:00Z",
+    "amount": 80.09,
+    "status": "completed"
+  },
+  {
+    "id": "2",
+    "companyName": "Mcdonald's",
+    "companyLogo": "assets/logos/mcdonalds.png",
+    "date": "2020-04-09T18:30:00Z",
+    "amount": 7.03,
+    "status": "completed"
+  },
+  {
+    "id": "3",
+    "companyName": "Levi's",
+    "companyLogo": "assets/logos/levis.png",
+    "date": "2020-04-09T14:15:00Z",
+    "amount": 30.09,
+    "status": "completed"
+  }
+]

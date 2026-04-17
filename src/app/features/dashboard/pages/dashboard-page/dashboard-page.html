@@ -1,0 +1,24 @@
+<div class="dashboard-shell">
+  <app-sidebar></app-sidebar>
+
+  <div class="main-wrapper">
+    <app-header [userName]="'Sanket'"></app-header>
+
+    <div class="content-area">
+      <div class="content-left">
+        <div class="kpi-row">
+          @for (card of kpiCards; track card.label) {
+            <app-kpi-card [data]="card"></app-kpi-card>
+          }
+        </div>
+        <app-analytics-chart></app-analytics-chart>
+        <app-transaction-list></app-transaction-list>
+      </div>
+
+      <div class="content-right">
+        <app-my-card></app-my-card>
+        <app-activity-chart></app-activity-chart>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="kpi-card">
+  <div class="kpi-header">
+    <div class="icon-container" [style.background]="data.iconBackground">
+      <lucide-icon [name]="data.icon" [size]="22" color="white"></lucide-icon>
+    </div>
+    <div class="trend-badge" [class.positive]="data.isPositive" [class.negative]="!data.isPositive">
+      <lucide-icon [name]="data.isPositive ? 'trending-up' : 'trending-down'" [size]="12"></lucide-icon>
+      <span>+{{ data.percentageChange }}%</span>
+    </div>
+  </div>
+  <div class="kpi-label">{{ data.label }}</div>
+  <div class="kpi-value">{{ data.value | currency:'USD':'symbol':'1.0-0' }}</div>
+</div>

@@ -1,0 +1,42 @@
+<div class="transaction-widget">
+  <div class="transaction-header">
+    <h3 class="widget-title">Transaction</h3>
+    <div class="filters">
+      <div class="search-box">
+        <lucide-icon name="search" [size]="16" class="search-icon"></lucide-icon>
+        <input
+          type="text"
+          placeholder="Search for anything..."
+          [(ngModel)]="searchQuery"
+          class="search-input"
+        />
+      </div>
+      <div class="date-badge">
+        <span>10 May - 20 May</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-header">
+    <div class="col-name">Name</div>
+    <div class="col-date">Date</div>
+    <div class="col-amount">Amount</div>
+    <div class="col-status">Status</div>
+  </div>
+
+  <div class="table-body">
+    @for (tx of filteredTransactions; track tx.id) {
+      <div class="transaction-row">
+        <div class="col-name">
+          <div class="company-avatar">{{ getInitials(tx.companyName) }}</div>
+          <span>{{ tx.companyName }}</span>
+        </div>
+        <div class="col-date">{{ tx.date | date:'EEE, dd MMM yyyy' }}</div>
+        <div class="col-amount">${{ tx.amount.toFixed(2) }}</div>
+        <div class="col-status">
+          <span class="status-badge" [class]="tx.status">{{ tx.status | titlecase }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ng generate *)",
+      "Bash(npm install *)",
+      "Bash(ng serve *)",
+      "Bash(python -c \"import json; d=json.load\\(open\\('angular.json'\\)\\); proj=list\\(d['projects'].keys\\(\\)\\)[0]; print\\(json.dumps\\(d['projects'][proj]['architect']['build']['options'], indent=2\\)\\)\")",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\('version'\\)\\); print\\(list\\(d.get\\('exports',{}\\).keys\\(\\)\\)[:5]\\)\")"
+    ]
+  }
+}

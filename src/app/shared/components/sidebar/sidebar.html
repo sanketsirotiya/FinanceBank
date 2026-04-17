@@ -1,0 +1,52 @@
+<aside class="sidebar">
+  <div class="logo-section">
+    <div class="logo-icon">
+      <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="20" fill="#6C5DD3"/>
+        <path d="M12 28 C12 20 20 12 28 12" stroke="#4ECDC4" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <circle cx="20" cy="20" r="5" fill="white"/>
+      </svg>
+    </div>
+    <span class="logo-text">uifry</span>
+  </div>
+
+  <nav class="nav-menu">
+    @for (item of menuItems; track item.label) {
+      <a
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: item.route === '/dashboard'}"
+        class="nav-item"
+      >
+        <lucide-icon [name]="item.icon" [size]="20"></lucide-icon>
+        <span>{{ item.label }}</span>
+      </a>
+    }
+  </nav>
+
+  <div class="sidebar-bottom">
+    <div class="bottom-item">
+      <lucide-icon name="shield" [size]="20"></lucide-icon>
+      <span>Security</span>
+    </div>
+    <div class="bottom-item">
+      <lucide-icon name="help-circle" [size]="20"></lucide-icon>
+      <span>Help Centre</span>
+    </div>
+    <div class="dark-mode-row">
+      <lucide-icon name="moon" [size]="20"></lucide-icon>
+      <span>Dark Mode</span>
+      <div class="toggle" [class.on]="isDarkMode" (click)="isDarkMode = !isDarkMode">
+        <div class="toggle-thumb"></div>
+      </div>
+    </div>
+    <div class="user-profile">
+      <div class="avatar-placeholder">SS</div>
+      <div class="user-info">
+        <div class="user-name">Sanket Sirotiya</div>
+        <div class="user-role">Web Developer</div>
+      </div>
+      <lucide-icon name="chevron-down" [size]="16" class="chevron"></lucide-icon>
+    </div>
+  </div>
+</aside>

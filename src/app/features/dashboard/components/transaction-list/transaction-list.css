@@ -1,0 +1,152 @@
+.transaction-widget {
+  background: #22273B;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.transaction-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  padding: 9px 12px 9px 36px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  width: 200px;
+}
+
+.search-input::placeholder { color: #5A607F; }
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8E92BC;
+}
+
+.date-badge {
+  padding: 9px 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  font-size: 13px;
+  color: #8E92BC;
+  white-space: nowrap;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+  font-size: 12px;
+  color: #8E92BC;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-body { margin-top: 4px; }
+
+.transaction-row {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  align-items: center;
+  transition: background 0.15s;
+}
+
+.transaction-row:last-child { border-bottom: none; }
+
+.transaction-row:hover { background: rgba(255,255,255,0.02); }
+
+.col-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.col-date {
+  font-size: 13px;
+  color: #8E92BC;
+}
+
+.col-amount {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.col-status { display: flex; }
+
+.company-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(108,93,211,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6C5DD3;
+  flex-shrink: 0;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.completed {
+  background: rgba(0, 217, 165, 0.1);
+  color: #00D9A5;
+}
+
+.status-badge.pending {
+  background: rgba(255, 184, 0, 0.1);
+  color: #FFB800;
+}
+
+.status-badge.failed {
+  background: rgba(255, 107, 107, 0.1);
+  color: #FF6B6B;
+}

@@ -1,0 +1,38 @@
+<div class="activity-widget">
+  <div class="activity-header">
+    <h3 class="widget-title">Activity</h3>
+    <select class="month-select">
+      <option>Month</option>
+      <option>Week</option>
+    </select>
+  </div>
+
+  <apx-chart
+    [series]="series"
+    [chart]="chart"
+    [plotOptions]="plotOptions"
+    [fill]="fill"
+    [stroke]="stroke"
+    [colors]="colors"
+    [dataLabels]="dataLabels"
+    [legend]="legend"
+  ></apx-chart>
+
+  <div class="activity-legend">
+    <div class="legend-item">
+      <span class="dot purple"></span>
+      <span class="label">Daily payment</span>
+      <span class="pct">55%</span>
+    </div>
+    <div class="legend-item">
+      <span class="dot teal"></span>
+      <span class="label">Hobby</span>
+      <span class="pct">20%</span>
+    </div>
+  </div>
+
+  <button class="view-all-btn">
+    View all activity
+    <lucide-icon name="arrow-right" [size]="16"></lucide-icon>
+  </button>
+</div>

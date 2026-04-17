@@ -1,0 +1,153 @@
+.card-widget {
+  background: #22273B;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.widget-header { margin-bottom: 4px; }
+
+.widget-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.total-balance-label {
+  font-size: 12px;
+  color: #8E92BC;
+  margin-top: 8px;
+}
+
+.total-balance {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin: 4px 0 16px;
+}
+
+.credit-card {
+  background: linear-gradient(135deg, #7B68EE 0%, #6C5DD3 40%, #9B59B6 100%);
+  border-radius: 20px;
+  padding: 22px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 32px rgba(108, 93, 211, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glare {
+  position: absolute;
+  top: -60%;
+  right: -40%;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-balance-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 4px;
+}
+
+.card-balance {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.mastercard-logo {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 28px;
+}
+
+.mc-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.mc-left {
+  background: #EB001B;
+  left: 0;
+  opacity: 0.9;
+}
+
+.mc-right {
+  background: #F79E1B;
+  right: 0;
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+.card-bottom {
+  margin-top: 16px;
+}
+
+.card-number {
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+}
+
+.card-expiry {
+  font-size: 12px;
+  color: rgba(255,255,255,0.75);
+  margin-top: 6px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn-primary {
+  flex: 1;
+  padding: 11px 16px;
+  background: #6C5DD3;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background: #5B4CCC;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  flex: 1;
+  padding: 11px 16px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover { background: rgba(255,255,255,0.06); }
