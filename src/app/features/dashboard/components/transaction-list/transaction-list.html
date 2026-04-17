@@ -28,7 +28,11 @@
     @for (tx of filteredTransactions; track tx.id) {
       <div class="transaction-row">
         <div class="col-name">
-          <div class="company-avatar">{{ getInitials(tx.companyName) }}</div>
+          @if (tx.companyLogo) {
+            <img [src]="tx.companyLogo" [alt]="tx.companyName" class="company-logo" />
+          } @else {
+            <div class="company-avatar">{{ getInitials(tx.companyName) }}</div>
+          }
           <span>{{ tx.companyName }}</span>
         </div>
         <div class="col-date">{{ tx.date | date:'EEE, dd MMM yyyy' }}</div>

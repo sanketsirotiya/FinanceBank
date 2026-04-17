@@ -46,26 +46,26 @@ export class DashboardService {
       {
         id: '1',
         companyName: 'Adobe After Effect',
-        companyLogo: '',
-        date: new Date('2020-04-20'),
+        companyLogo: 'assets/logos/adobe.svg',
+        date: new Date(2020, 3, 20),
         amount: 80.09,
-        status: 'completed'
+        status: 'deposited'
       },
       {
         id: '2',
         companyName: "Mcdonald's",
-        companyLogo: '',
-        date: new Date('2020-04-19'),
+        companyLogo: 'assets/logos/mcdonalds.svg',
+        date: new Date(2020, 3, 19),
         amount: 7.03,
-        status: 'completed'
+        status: 'deposited'
       },
       {
         id: '3',
         companyName: "Levi's",
-        companyLogo: '',
-        date: new Date('2020-04-19'),
+        companyLogo: 'assets/logos/levis.svg',
+        date: new Date(2020, 3, 19),
         amount: 30.09,
-        status: 'completed'
+        status: 'deposited'
       }
     ];
   }

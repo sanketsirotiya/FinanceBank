@@ -4,5 +4,5 @@ export interface Transaction {
   companyLogo: string;
   date: Date;
   amount: number;
-  status: 'completed' | 'pending' | 'failed';
+  status: 'deposited' | 'completed' | 'pending' | 'failed';
 }
