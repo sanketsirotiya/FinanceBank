@@ -29,4 +29,4 @@ All data is hardcoded in `src/app/core/services/dashboard.ts` — no HTTP calls.
 Assets (logos) live in `src/assets/logos/`.
 
 ## Owner
-Sanket Sirotiya — sanket284003@gmail.com
+Sanket Sirotiya
